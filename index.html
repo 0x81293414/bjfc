@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Berkley FC</title>
+      <link rel="icon" type="image/png" href="/bjfc_logo.png">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       <style>
@@ -11,8 +12,7 @@
               --primary-color: #000;
               --secondary-color: #111;
               --accent-color: #029141;
-              --text-color: #fff;
-          }
+              --text-color: #fff;          }
           body {
               font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
               overflow-x: hidden;
@@ -41,6 +41,9 @@
               letter-spacing: -0.025em;
               padding: 0.5rem 1rem;
               transition: all 0.15s ease;
+              display: flex;
+              align-items: center;
+              gap: 1rem;
           }
           .navbar-brand:hover {
               opacity: 0.8;
@@ -61,6 +64,20 @@
           .nav-link.active {
               color: var(--accent-color) !important;
               opacity: 1;
+          }
+          .sponsor-logo {
+              height: 30px;
+              transition: transform 0.3s ease;
+              filter: brightness(0) invert(1);
+          }
+          .sponsor-logo:hover {
+              transform: scale(1.05);
+          }
+          .navbar-divider {
+              width: 1px;
+              height: 24px;
+              background: rgba(255, 255, 255, 0.1);
+              margin: 0 1rem;
           }
           .hero-section {
               background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
@@ -157,6 +174,11 @@
           .modal-footer {
               border-top: 1px solid rgba(255, 255, 255, 0.1);
           }
+          .sponsor-section {
+              text-align: center;
+              padding: 2rem 0;
+              background: rgba(255, 255, 255, 0.03);
+          }
       </style>
   </head>
   <body>
@@ -173,7 +195,8 @@
                   <ul class="navbar-nav ms-auto">
                       <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                       <li class="nav-item"><a class="nav-link" href="/teams/index.html">Teams</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#players">Players</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#fixtures">Fixtures</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#academy">Academy</a></li>
                       <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                   </ul>
               </div>
@@ -192,49 +215,44 @@
           </div>
       </section>
 
-      <section class="section" id="features">
+      <section class="section" id="about">
           <div class="container">
-              <h2 class="section-title">Why Choose Berkley FC?</h2>
+              <h2 class="section-title">About Berkley FC</h2>
               <div class="row">
                   <div class="col-md-4 mb-4">
                       <div class="feature-card">
-                          <i class="fas fa-trophy feature-icon"></i>
-                          <h3>Award Winning</h3>
-                          <p>Grassroots Club of the Year 2023</p>
+                          <i class="fas fa-history feature-icon"></i>
+                          <h3>Our History</h3>
+                          <p>Founded in 2011, Berkley FC has grown to become one of Liverpool's leading grassroots football clubs, dedicated to developing young talent.</p>
                       </div>
                   </div>
                   <div class="col-md-4 mb-4">
                       <div class="feature-card">
-                          <i class="fas fa-users feature-icon"></i>
-                          <h3>Teams U7 to U18</h3>
-                          <p>Registered with Merseyside Youth Football League (MYFL)</p>
+                          <i class="fas fa-bullseye feature-icon"></i>
+                          <h3>Our Mission</h3>
+                          <p>We aim to provide high-quality football education while fostering teamwork, respect, and personal development in every player.</p>
                       </div>
                   </div>
                   <div class="col-md-4 mb-4">
                       <div class="feature-card">
-                          <i class="fas fa-store feature-icon"></i>
-                          <h3>Club Shop</h3>
-                          <p>Personalized team wear, training gear, and equipment available</p>
+                          <i class="fas fa-star feature-icon"></i>
+                          <h3>Our Values</h3>
+                          <p>Excellence, inclusivity, and community spirit are at the heart of everything we do, creating a positive environment for players to thrive.</p>
                       </div>
                   </div>
               </div>
           </div>
       </section>
 
-      <section class="section" id="players">
-          <div class="container">
-              <h2 class="section-title">Player Development</h2>
-              <div class="row">
-                  <div class="col-md-6 offset-md-3">
-                      <div class="feature-card">
-                          <p>At Berkley FC, we focus on developing both technical skills and character. Our comprehensive training program ensures players reach their full potential while having fun.</p>
-                          <a href="teams.html" class="btn btn-primary mt-3">Join Our Teams</a>
-                      </div>
-                  </div>
-              </div>
+      <section class="sponsor-section" style="background: rgba(14, 13, 13, 0.507); padding: 60px 0; margin: 40px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: px; position: relative; overflow: hidden;">
+          <div class="container text-center" style="position: relative; z-index: 2;">
+              <h2 class="section-title" style="margin-bottom: 40px; color: var(--text-color); font-size: 2.8rem; letter-spacing: -0.025em;">Official Club Sponsor</h2>
+              <a href="https://51MillLane.co.uk" target="_blank" class="sponsor-link" style="display: inline-block; padding: 20px; background: rgba(255, 255, 255, 0.03); border-radius: 16px; border: 1px solid var(--accent-color); box-shadow: 0 0 20px rgba(2, 145, 65, 0.3); transition: all 0.15s ease;">
+                  <img src="https://www.51milllane-6abl.temp-dns.com/wp-content/uploads/2017/05/2logo.svg" alt="51MillLane.co.uk" height="120" style="transition: all 0.15s ease;">
+              </a>
           </div>
       </section>
-
+<style></style>
       <section class="section" id="contact">
           <div class="container">
               <h2 class="section-title">Contact Us</h2>
