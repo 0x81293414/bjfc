@@ -88,7 +88,12 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             height: 100%;
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+        }
+        @media (min-width: 768px) {
+            .team-info-card, .motm-card {
+                flex-direction: row;
+            }
         }
         .motm-card {
             border: 1px solid var(--accent-color);
@@ -100,11 +105,19 @@
             padding-right: 2rem;
         }
         .motm-image {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid var(--accent-color);
+            margin: 2rem auto 0;
+        }
+        @media (min-width: 768px) {
+            .motm-image {
+                width: 300px;
+                height: 300px;
+                margin: 0;
+            }
         }
         .info-item {
             margin-bottom: 1rem;
@@ -234,8 +247,8 @@
                     <div class="player-card">
                         <h4>Goalkeepers</h4>
                         <ul class="list-unstyled">
-                            <li>James Wilson</li>
-                            <li>Tommy Roberts</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
                         </ul>
                     </div>
                 </div>
@@ -243,10 +256,10 @@
                     <div class="player-card">
                         <h4>Defenders</h4>
                         <ul class="list-unstyled">
-                            <li>Harry Brown</li>
-                            <li>Jack Thompson</li>
-                            <li>Oliver White</li>
-                            <li>Charlie Davis</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
                         </ul>
                     </div>
                 </div>
@@ -254,13 +267,12 @@
                     <div class="player-card">
                         <h4>Midfielders/Forwards</h4>
                         <ul class="list-unstyled">
-                            <li>Leo Parker</li>
-                            <li>Mason Hughes</li>
-                            <li>Lucas Edwards</li>
-                            <li>Noah Mitchell</li>
-                            <li>Ethan Clarke</li>
-                        </ul>
-                    </div>
+                            <li>TBD</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
+                        </ul>                      </div>
                 </div>
             </div>
         </section>
