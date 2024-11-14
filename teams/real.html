@@ -1,272 +1,271 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Berkley FC - Real Team</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-      <style>
-          :root {
-              --primary-color: #000;
-              --secondary-color: #111;
-              --accent-color: #029141;
-              --text-color: #fff;
-          }
-          body {
-              font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-              overflow-x: hidden;
-              line-height: 1.6;
-              background-color: var(--primary-color);
-              color: var(--text-color);
-              letter-spacing: -0.025em;
-          }
-          .navbar {
-              background-color: rgba(0, 0, 0, 0.8);
-              border-radius: 16px;
-              padding: 0.75rem 1.5rem;
-              margin: 1rem;
-              position: fixed;
-              top: 0;
-              left: 0;
-              right: 0;
-              z-index: 1000;
-              backdrop-filter: blur(10px);
-              border: 1px solid rgba(255, 255, 255, 0.1);
-          }
-          .navbar-brand {
-              color: var(--text-color) !important;
-              font-weight: 800;
-              font-size: 1.25rem;
-              letter-spacing: -0.025em;
-              padding: 0.5rem 1rem;
-              transition: all 0.15s ease;
-          }
-          .nav-link {
-              color: var(--text-color) !important;
-              font-weight: 500;
-              padding: 0.5rem 1rem;
-              margin: 0 0.2rem;
-              transition: all 0.15s ease;
-              opacity: 0.7;
-              font-size: 0.875rem;
-          }
-          .nav-link:hover {
-              opacity: 1;
-              color: var(--accent-color) !important;
-          }
-          .nav-link.active {
-              color: var(--accent-color) !important;
-              opacity: 1;
-          }
-          .page-header {
-              background-image: url('../bjfc_real.jpeg');
-              background-size: cover;
-              background-position: center;
-              position: relative;
-              padding: 12rem 0 6rem;
-              text-align: center;
-          }
-          .page-header::before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              background: linear-gradient(45deg, rgba(17, 17, 17, 0.9), rgba(2, 145, 65, 0.9));
-          }
-          .page-header .container {
-              position: relative;
-              z-index: 1;
-          }
-          .team-info-card, .motm-card {
-              background: rgba(255, 255, 255, 0.03);
-              border-radius: 16px;
-              padding: 3rem;
-              margin: 2rem 0;
-              border: 1px solid rgba(255, 255, 255, 0.1);
-              height: 100%;
-              display: flex;
-              align-items: flex-start;
-          }
-          .motm-card {
-              border: 1px solid var(--accent-color);
-              box-shadow: 0 0 20px rgba(2, 145, 65, 0.3);
-          }
-          .team-info-content, .motm-content {
-              flex: 1;
-              text-align: left;
-              padding-right: 2rem;
-          }
-          .motm-image {
-              width: 300px;
-              height: 300px;
-              border-radius: 50%;
-              object-fit: cover;
-              border: 3px solid var(--accent-color);
-          }
-          .info-item {
-              margin-bottom: 1rem;
-              display: flex;
-              align-items: center;
-          }
-          .info-item i {
-              color: var(--accent-color);
-              margin-right: 1rem;
-              width: 24px;
-          }
-          .squad-section {
-              padding: 4rem 0;
-          }
-          .player-card {
-              background: rgba(255, 255, 255, 0.03);
-              border-radius: 16px;
-              padding: 1.5rem;
-              margin-bottom: 1.5rem;
-              border: 1px solid rgba(255, 255, 255, 0.1);
-              transition: all 0.15s ease;
-              height: 100%;
-          }
-          .player-card:hover {
-              transform: translateY(-5px);
-              border-color: var(--accent-color);
-          }
-          .section-title {
-              font-size: 2rem;
-              font-weight: 700;
-              margin-bottom: 2rem;
-              text-align: center;
-          }
-          h3 {
-              font-size: 1.5rem;
-              font-weight: 600;
-              margin-bottom: 1.5rem;
-          }
-      </style>
-  </head>
-  <body>
-      <nav class="navbar navbar-expand-lg">
-          <div class="container">
-              <a class="navbar-brand" href="../index.html">
-                  <img src="../bjfc_logo.png" alt="Berkley FC Logo" height="30">
-                  Berkley FC
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ms-auto">
-                      <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                      <li class="nav-item"><a class="nav-link active" href="../teams.html">Teams</a></li>
-                      <li class="nav-item"><a class="nav-link" href="../index.html#players">Players</a></li>
-                      <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkley FC - Real Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #000;
+            --secondary-color: #111;
+            --accent-color: #029141;
+            --text-color: #fff;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            letter-spacing: -0.025em;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 16px;
+            padding: 0.75rem 1.5rem;
+            margin: 1rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .navbar-brand {
+            color: var(--text-color) !important;
+            font-weight: 800;
+            font-size: 1.25rem;
+            letter-spacing: -0.025em;
+            padding: 0.5rem 1rem;
+            transition: all 0.15s ease;
+        }
+        .nav-link {
+            color: var(--text-color) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            margin: 0 0.2rem;
+            transition: all 0.15s ease;
+            opacity: 0.7;
+            font-size: 0.875rem;
+        }
+        .nav-link:hover {
+            opacity: 1;
+            color: var(--accent-color) !important;
+        }
+        .nav-link.active {
+            color: var(--accent-color) !important;
+            opacity: 1;
+        }
+        .page-header {
+            background-image: url('../bjfc_real.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 12rem 0 6rem;
+            text-align: center;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(17, 17, 17, 0.9), rgba(2, 145, 65, 0.9));
+        }
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        .team-info-card, .motm-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 3rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+        }
+        .motm-card {
+            border: 1px solid var(--accent-color);
+            box-shadow: 0 0 20px rgba(2, 145, 65, 0.3);
+        }
+        .team-info-content, .motm-content {
+            flex: 1;
+            text-align: left;
+            padding-right: 2rem;
+        }
+        .motm-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+        }
+        .info-item {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .info-item i {
+            color: var(--accent-color);
+            margin-right: 1rem;
+            width: 24px;
+        }
+        .squad-section {
+            padding: 4rem 0;
+        }
+        .player-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.15s ease;
+            height: 100%;
+        }
+        .player-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../bjfc_logo.png" alt="Berkley FC Logo" height="30">
+                Berkley FC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="/teams">Teams</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-      <section class="page-header">
-          <div class="container">
-              <h1 class="display-4">Berkley Real</h1>
-              <p class="lead">Under 8s Squad</p>
-          </div>
-      </section>
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4">Berkley Real</h1>
+            <p class="lead">Under 8s Squad</p>
+        </div>
+    </section>
 
-      <div class="container">
-          <div class="row">
-              <div class="col-md-6">
-                  <div class="team-info-card">
-                      <div class="team-info-content">
-                          <h3>Team Information</h3>
-                          <div class="info-item">
-                              <i class="fas fa-user-tie"></i>
-                              <span>Manager: Sara Sedgwick</span>
-                          </div>
-                          <div class="info-item">
-                              <i class="fas fa-calendar"></i>
-                              <span>Training: Wednesdays 6:00 PM - 7:00 PM</span>
-                          </div>
-                          <div class="info-item">
-                              <i class="fas fa-futbol"></i>
-                              <span>Match Day: Saturday Mornings</span>
-                          </div>
-                          <div class="info-item">
-                              <i class="fas fa-map-marker-alt"></i>
-                              <span>Home Ground: KGV (Browns Field) L34 1LZ</span>
-                          </div>
-                          <div class="info-item">
-                              <i class="fas fa-trophy"></i>
-                              <span>League: MYFL Under 8s Division</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="motm-card">
-                      <div class="motm-content">
-                          <h3>Man of the Match</h3>
-                          <div class="info-item">
-                              <i class="fas fa-star"></i>
-                              <span>Latest Match: TBD</span>
-                          </div>
-                          <div class="info-item">
-                              <i class="fas fa-trophy"></i>
-                              <span>Performance: TBD</span>
-                          </div>
-                          <div class="info-item">
-                              <i class="fas fa-calendar-alt"></i>
-                              <span>Date: TBD</span>
-                          </div>
-                          <div class="info-item">
-                              <i class="fas fa-comment"></i>
-                              <span>Manager's Comment: "TBD"</span>
-                          </div>
-                      </div>
-                      <img src="../bjfc_logo.png" alt="TBF" class="motm-image">
-                  </div>
-              </div>
-          </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="team-info-card">
+                    <div class="team-info-content">
+                        <h3>Team Information</h3>
+                        <div class="info-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Manager: Sara Sedgwick</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Training: Wednesdays 6:00 PM - 7:00 PM</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-futbol"></i>
+                            <span>Match Day: Saturday Mornings</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Home Ground: KGV (Browns Field) L34 1LZ</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>League: MYFL Under 8s Division</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="motm-card">
+                    <div class="motm-content">
+                        <h3>Man of the Match</h3>
+                        <div class="info-item">
+                            <i class="fas fa-star"></i>
+                            <span>Latest Match: TBD</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Performance: TBD</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Date: TBD</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-comment"></i>
+                            <span>Manager's Comment: "TBD"</span>
+                        </div>
+                    </div>
+                    <img src="../bjfc_logo.png" alt="TBF" class="motm-image">
+                </div>
+            </div>
+        </div>
 
-          <section class="squad-section">
-              <h2 class="section-title">Players</h2>
-              <div class="row g-4">
-                  <div class="col-md-4">
-                      <div class="player-card">
-                          <h4>Goalkeepers</h4>
-                          <ul class="list-unstyled">
-                              <li>James Wilson</li>
-                              <li>Tommy Roberts</li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="player-card">
-                          <h4>Defenders</h4>
-                          <ul class="list-unstyled">
-                              <li>Harry Brown</li>
-                              <li>Jack Thompson</li>
-                              <li>Oliver White</li>
-                              <li>Charlie Davis</li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="player-card">
-                          <h4>Midfielders/Forwards</h4>
-                          <ul class="list-unstyled">
-                              <li>Leo Parker</li>
-                              <li>Mason Hughes</li>
-                              <li>Lucas Edwards</li>
-                              <li>Noah Mitchell</li>
-                              <li>Ethan Clarke</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </section>
-      </div>
+        <section class="squad-section">
+            <h2 class="section-title">Players</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="player-card">
+                        <h4>Goalkeepers</h4>
+                        <ul class="list-unstyled">
+                            <li>James Wilson</li>
+                            <li>Tommy Roberts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="player-card">
+                        <h4>Defenders</h4>
+                        <ul class="list-unstyled">
+                            <li>Harry Brown</li>
+                            <li>Jack Thompson</li>
+                            <li>Oliver White</li>
+                            <li>Charlie Davis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="player-card">
+                        <h4>Midfielders/Forwards</h4>
+                        <ul class="list-unstyled">
+                            <li>Leo Parker</li>
+                            <li>Mason Hughes</li>
+                            <li>Lucas Edwards</li>
+                            <li>Noah Mitchell</li>
+                            <li>Ethan Clarke</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-  </html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
